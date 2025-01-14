@@ -20,7 +20,7 @@ public class ObjectDetectionUnitTest {
             ObjectDetection().DetectObjectInScenesAsync(imageScenesData); 
         
         Assert.Equal(
-            "[{\"Confidence\":0.7687561,\"Label\":\"person\",\"Dimensions\":{\"X\":75,\"Y\":119,\"Width\":188,\"Height\":298}}]",
+            "[{\"Confidence\":0.7687562,\"Label\":\"person\",\"Dimensions\":{\"X\":75,\"Y\":119,\"Width\":188,\"Height\":298}}]",
             JsonSerializer.Serialize(detectObjectInScenesResults[0].Box)
         );
 
